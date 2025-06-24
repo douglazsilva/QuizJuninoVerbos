@@ -1,6 +1,5 @@
 import java.util.Scanner;
 
-// The main method must be in a class named "Main".
 class Quiz {
     public static void main(String[] args) {
 
@@ -46,10 +45,10 @@ class Quiz {
         }
         double resultado = ((double) acertos / quiz.length) * 100;
         imprima("voce acertou " + acertos + " de " + quiz.length + " questoes, equivalente a " + resultado + "% de acerto.");
-        //scan.close();
+        scan.close();
     }
 
-    static void imprima(String texto) {
+    public static void imprima(String texto) {
         System.out.println(texto);
     }
 }
